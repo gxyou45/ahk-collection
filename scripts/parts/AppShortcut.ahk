@@ -55,7 +55,7 @@ toggleAppWindow(winTitle)
 ; a - Atom
 Capslock & a::toggleAppWindow("ahk_class Chrome_WidgetWin_1 ahk_exe atom.exe")
 ; b - Chrome
-Capslock & b::toggleAppWindow("ahk_class Chrome_WidgetWin_1 ahk_exe chrome.exe")
+Capslock & b::toggleAppWindowWithTray("chrome.exe")
 ; d - Lingoes
 Capslock & d::toggleAppWindowWithTray("Lingoes.exe")
 ; e - ST3
@@ -65,13 +65,14 @@ Capslock & i::toggleAppWindowWithTray("WeChat.exe")
 ; m - Slack
 Capslock & m::toggleAppWindow("ahk_class Chrome_WidgetWin_1 ahk_exe slack.exe")
 ; n - OneNote
-Capslock & n::toggleAppWindow("ahk_class Framework::CFrame ahk_exe ONENOTE.EXE")
+; Capslock & n::toggleAppWindow("ahk_class Framework::CFrame ahk_exe ONENOTE.EXE")
+Capslock & n::toggleAppWindow("ahk_class Notepad++ ahk_exe notepad++.exe")
 ; o - Skype
 Capslock & o::toggleAppWindowWithTray("Skype.exe", true, "tSkMainForm")
-; p - Spotify
-Capslock & p::toggleAppWindow("ahk_class SpotifyMainWindow ahk_exe Spotify.exe")
-; u - TIM (QQ)
-Capslock & u::toggleAppWindowWithTray("TIM.exe")
+; p - QQMusic
+Capslock & p::toggleAppWindowWithTray("QQMusic.exe")
+; u - WXWork
+Capslock & u::toggleAppWindowWithTray("WXWork.exe")
 ; v - VS Code
 Capslock & v::toggleAppWindow("ahk_class Chrome_WidgetWin_1 ahk_exe Code.exe")
 ; y - Postman
